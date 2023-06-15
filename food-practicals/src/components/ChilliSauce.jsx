@@ -1,7 +1,26 @@
 import banner from "../assets/images/banner3.jpg";
 import { data } from '../assets/data/Data';
+import { useState } from "react";
 
 const ChilliSauce = () => {
+  const [sauces, setSauces] = useState(data);
+
+
+  //filter tomato and chilli sauces
+  const filterName = (name)=>{
+    setSauces(data.filter((item) =>{
+      return item.name === name;
+    }))
+  }
+
+
+  //by quantity
+  const filterQuantity = (quantity)=>{
+    setSauces(data.filter((item) =>{
+      return item.quantity === quantity;
+    }))
+  }
+
   return (
     /* console.log(data) */
     <div id="#chilly">
@@ -30,13 +49,22 @@ const ChilliSauce = () => {
           <div>
             <p className="text-gray-700 font-title font-bold">Filter Type:</p>
             <div className="p-2 flex justify-start flex-wrap">
-              <button className="bg-tertiary p-2 rounded-lg font-cursive font-semibold border-2 border-tertiary hover:scale-105 hover:bg-red-500 ease-in duration-150 m-1">
+              <button
+                className="bg-tertiary p-2 rounded-lg font-cursive font-semibold border-2 border-tertiary hover:scale-105 hover:bg-red-500 ease-in duration-150 m-1"
+                onClick={() => setSauces(data)}
+              >
                 All
               </button>
-              <button className="bg-tertiary p-2 rounded-lg font-cursive font-semibold border-2 border-tertiary hover:scale-105 hover:bg-red-500 ease-in duration-150 m-1">
+              <button
+                className="bg-tertiary p-2 rounded-lg font-cursive font-semibold border-2 border-tertiary hover:scale-105 hover:bg-red-500 ease-in duration-150 m-1"
+                onClick={() => filterName("Chilli Sauce")}
+              >
                 Chilli Sauce
               </button>
-              <button className="bg-tertiary p-2 rounded-lg font-cursive font-semibold border-2 border-tertiary hover:scale-105 hover:bg-red-500 ease-in duration-150 m-1">
+              <button
+                className="bg-tertiary p-2 rounded-lg font-cursive font-semibold border-2 border-tertiary hover:scale-105 hover:bg-red-500 ease-in duration-150 m-1"
+                onClick={() => filterName("Tomato Sauce")}
+              >
                 Tomato Sauce
               </button>
             </div>
@@ -48,23 +76,54 @@ const ChilliSauce = () => {
               Filter Quantity:
             </p>
             <div className="p-2 flex justify-start flex-wrap">
-              <button className="bg-tertiary p-2 rounded-lg font-cursive font-semibold border-2 border-tertiary hover:scale-105 hover:bg-red-500 ease-in duration-150 m-1">
+              <button
+                className="bg-tertiary p-2 rounded-lg font-cursive font-semibold border-2 border-tertiary hover:scale-105 hover:bg-red-500 ease-in duration-150 m-1"
+                onClick={() => setSauces(data)}
+              >
                 All
               </button>
-              <button className="bg-tertiary p-2 rounded-lg font-cursive font-semibold border-2 border-tertiary hover:scale-105 hover:bg-red-500 ease-in duration-150 m-1">
+              <button
+                className="bg-tertiary p-2 rounded-lg font-cursive font-semibold border-2 border-tertiary hover:scale-105 hover:bg-red-500 ease-in duration-150 m-1"
+                onClick={() => filterQuantity("5 Liters")}
+              >
                 5 Liters
               </button>
-              <button className="bg-tertiary p-2 rounded-lg font-cursive font-semibold border-2 border-tertiary hover:scale-105 hover:bg-red-500 ease-in duration-150 m-1">
+              <button
+                className="bg-tertiary p-2 rounded-lg font-cursive font-semibold border-2 border-tertiary hover:scale-105 hover:bg-red-500 ease-in duration-150 m-1"
+                onClick={() => filterQuantity("2 Liters")}
+              >
                 2 Liters
               </button>
-              <button className="bg-tertiary p-2 rounded-lg font-cursive font-semibold border-2 border-tertiary hover:scale-105 hover:bg-red-500 ease-in duration-150 m-1">
+              <button
+                className="bg-tertiary p-2 rounded-lg font-cursive font-semibold border-2 border-tertiary hover:scale-105 hover:bg-red-500 ease-in duration-150 m-1"
+                onClick={() => filterQuantity("400 grams")}
+              >
                 {"<"}1 Liter
               </button>
             </div>
           </div>
           {/**end of filter quantity*/}
         </div>
-        {/** ed of filters */}
+        {/** end of filters */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 pt-4 ">
+          {/**display data(sauces)}*/}
+          {sauces.map((sauce, index) => (
+            <div
+              key={index}
+              className="border shadow-xl hover:scale-105 ease-in duration-300 rounded-t-xl "
+            >
+              <img
+                src={sauce.image}
+                alt={sauce.name}
+                className="w-full h-[250px] object-cover rounded-t-xl"
+              />
+              <div className="flex justify-between px-2 py-4">
+                <p className="font-bold font-body">{sauce.name}</p>
+                <p className="font-semibold font-body">{sauce.quantity}</p>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
