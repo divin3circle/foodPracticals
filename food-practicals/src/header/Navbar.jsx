@@ -90,7 +90,7 @@ const Navbar = () => {
               </li>
               <li className="mb-4">
                 <a
-                  href="#sauce"
+                  href="#chilly"
                   className="w-[75%] flex font-title font-bold p-2 text-xl"
                 >
                   <GiKiwiFruit size={26} className="mr-2" />
