@@ -4,7 +4,7 @@ import banner from "../assets/images/banner2.jpg";
 const Home= () => {
   return (
     <div className="max-w-[1640px] my-8 mx-auto p-4 hover:opacity-95 hover:scale-95 duration-150 ease-in-out " id='home'>
-      <div className="max-h-[500px] relative flex justify-center items-center ">
+      <div className="max-h-[500px] relative flex justify-center items-center" data-aos='fade-up' data-aos-duration='1500'>
         {/**Image overlay */}
         <div className="absolute w-full h-full text-white max-h-[500px] max-w-[1000px] bg-black/75 flex flex-col justify-center rounded-2xl">
           <h1 className="font-title text-center text-3xl font-bold md:text-4xl">

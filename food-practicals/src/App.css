@@ -5,7 +5,6 @@
   padding: 0;
 }
 
-body{
-  font-family: 'Open Sans', 'Lato', sans-serif;
+html{
   scroll-behavior: smooth;
 }
