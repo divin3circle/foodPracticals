@@ -11,31 +11,31 @@ import yog15 from "../images/data-images/you15.jpg";
 export const yogurtData = [
   {
     id: 12,
-    name: "Yoghurt",
+    name: "Yogurt",
     quantity: "5 Liters",
     image: yog5l,
   },
   {
     id: 13,
-    name: "Yoghurt",
+    name: "Yogurt",
     quantity: "2 Liters",
     image: yog2,
   },
   {
     id: 14,
-    name: "Yoghurt",
+    name: "Yogurt",
     quantity: "500 grams",
     image: yog5,
   },
   {
     id: 15,
-    name: "Yoghurt",
+    name: "Yogurt",
     quantity: "250 grams",
     image: yog25,
   },
   {
     id: 16,
-    name: "Yoghurt",
+    name: "Yogurt",
     quantity: "5 Liters",
     image: yog15,
   },
@@ -53,7 +53,7 @@ export const yogurtData = [
   },
   {
     id: 19,
-    name: "Chilli Sauce",
+    name: "Maziwa Lala",
     quantity: "250 grams",
     image: maz25,
   },

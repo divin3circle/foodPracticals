@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import { useState } from "react";
 import { AiOutlineClose, AiOutlineContacts, AiOutlineHome, AiOutlineMenu, AiOutlineSearch, AiOutlineShoppingCart } from "react-icons/ai";
 import {  FaHotjar, FaShoppingBag } from "react-icons/fa";
 import { GiKiwiFruit } from "react-icons/gi";
+import { Link } from "react-router-dom"
 
 const Navbar = () => {
     const [nav, setNav] = useState(false);
@@ -70,14 +71,10 @@ const Navbar = () => {
           </h2>
           <nav>
             <ul className="flex flex-col p-4">
-              <li className="mb-4">
-                <a
-                  href="#home"
-                  className="w-[75%] flex font-title font-bold p-2 text-xl"
-                >
+              <li className="mb-4 w-[75%] flex font-title font-bold p-2 text-xl">
+                
                   <AiOutlineHome size={26} className="mr-2" />
-                  Home
-                </a>
+                  <Link to="/home">Home</Link>
               </li>
               <li className="mb-4">
                 <a

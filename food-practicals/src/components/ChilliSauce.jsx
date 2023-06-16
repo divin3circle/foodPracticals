@@ -24,7 +24,7 @@ const ChilliSauce = () => {
   return (
     /* console.log(data) */
     <div id="#chilly">
-      <div className="max-w-[1640px] my-8 mx-auto p-4 hover:opacity-95 hover:scale-95 duration-150 ease-in-out ">
+      <div className="max-w-[1640px] my-8 mx-auto p-4 hover:opacity-95 hover:scale-95 duration-150 cursor-pointer ease-in-out ">
         <div className="max-h-[500px] relative flex justify-center items-center ">
           {/**Image overlay */}
           <div className="absolute md:w-[56rem] h-full text-white max-h-[500px] max-w-[1000px] xs:w-[24rem] xxs:w-full bg-black/75 flex flex-col justify-center rounded-2xl">
