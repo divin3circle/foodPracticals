@@ -27,7 +27,7 @@ const Headline = () => {
             <div className="mt-16 flex lg:justify-between xxs:justify-between md:justify-start items-baseline">
               <p className=" p-2 mt-14 font-body text-sm  ">Garlic inspired</p>
               <button className="p-2 text-sm border-2 border-text rounded-xl mr-2 md:ml-4 hover:bg-rose-300 hover:text-black hover:border-none hover:scale-75 ease-in duration-150 hover:font-bold">
-                <a href="contact">More</a>
+                <a href="/contact">More</a>
               </button>
             </div>
           </div>
@@ -50,7 +50,7 @@ const Headline = () => {
             <div className=" mt-16 flex lg:justify-between xxs:justify-between md:justify-start items-baseline">
               <p className="p-2 mt-14 font-body text-sm  ">Fiery Sauce</p>
               <button className="p-2 text-sm border-2 border-text rounded-xl mr-2 md:ml-4 hover:bg-rose-300 hover:text-black hover:border-none hover:scale-75 ease-in duration-150 hover:font-bold">
-                <a href="contact">More</a>
+                <a href="/contact">More</a>
               </button>
             </div>
           </div>
@@ -76,7 +76,7 @@ const Headline = () => {
             >
               <p className="p-2 mt-14 font-body text-sm  ">Creamy flavour</p>
               <button className="p-2 text-sm border-2 border-text rounded-xl mr-2 md:ml-4 hover:bg-rose-300 hover:text-black hover:border-none hover:scale-75 ease-in duration-150 hover:font-bold">
-                <a href="new">More</a>
+                <a href="/new">More</a>
               </button>
             </div>
           </div>

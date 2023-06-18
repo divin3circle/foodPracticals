@@ -32,7 +32,7 @@ const Navbar = () => {
       {/* Right Side Navbar cart */}
       <div className="cursor-pointer">
         <button className=" bg-tertiary hidden lg:flex items-center py-2 rounded-lg px-2 font-cursive font-semibold hover:bg-text border-tertiary border-2 hover:text-black hover:scale-105 ease-in duration-150">
-          <a href="contact">
+          <a href="/contact">
             <AiOutlineShoppingCart size={24} />
           </a>
           <p className="ml-2 font-cursive">Cart</p>
@@ -77,11 +77,11 @@ const Navbar = () => {
             <ul className="flex flex-col p-4">
               <li className="mb-4 w-[75%] flex font-title font-bold p-2 text-xl">
                 <AiOutlineHome size={26} className="mr-2" />
-                <a href="/home">Home</a>
+                <a href="/">Home</a>
               </li>
               <li className="mb-4">
                 <a
-                  href="chilly"
+                  href="/chilly"
                   className="w-[75%] flex font-title font-bold p-2 text-xl"
                 >
                   <FaHotjar size={26} className="mr-2" />
@@ -90,7 +90,7 @@ const Navbar = () => {
               </li>
               <li className="mb-4">
                 <a
-                  href="chilly"
+                  href="/chilly"
                   className="w-[75%] flex font-title font-bold p-2 text-xl"
                 >
                   <GiKiwiFruit size={26} className="mr-2" />
@@ -99,7 +99,7 @@ const Navbar = () => {
               </li>
               <li className="mb-4">
                 <a
-                  href="new"
+                  href="/new"
                   className="w-[75%] flex font-title font-bold p-2 text-xl"
                 >
                   <FaShoppingBag size={26} className="mr-2" />
@@ -108,7 +108,7 @@ const Navbar = () => {
               </li>
               <li className="mb-4">
                 <a
-                  href="contact"
+                  href="/contact"
                   className="w-[75%] flex font-title font-bold p-2 text-xl"
                 >
                   <AiOutlineContacts size={26} className="mr-2" />
