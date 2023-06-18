@@ -1,4 +1,4 @@
-import SplineDesign from "./SplineDesign";
+
 import ChilliSauce from "./ChilliSauce";
 import Headline from "./Headline";
 import Home from "./Home";
@@ -10,7 +10,6 @@ import Footer from "../footer/Footer";
 const MyApp = () => {
   return (
     <>
-      <SplineDesign />
       <Home />
       <Headline />
       <ChilliSauce />
