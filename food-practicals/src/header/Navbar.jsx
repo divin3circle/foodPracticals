@@ -15,9 +15,9 @@ const Navbar = () => {
           <AiOutlineMenu size={32} />
         </div>
         <h1 className="font-title text-lg xs:text-2xl md:text-3xl lg:text-4xl px-2 cursor-pointer">
-          <a href="/">
+          <Link to="/">
             Food<span className="font-bold font-cursive">PRACTICALS</span>
-          </a>
+          </Link>
         </h1>
       </div>
       {/* Right Side Navbar Search Input */}
@@ -32,9 +32,9 @@ const Navbar = () => {
       {/* Right Side Navbar cart */}
       <div className="cursor-pointer">
         <button className=" bg-tertiary hidden lg:flex items-center py-2 rounded-lg px-2 font-cursive font-semibold hover:bg-text border-tertiary border-2 hover:text-black hover:scale-105 ease-in duration-150">
-          <a href="/contact">
+          <Link to="/contact">
             <AiOutlineShoppingCart size={24} />
-          </a>
+          </Link>
           <p className="ml-2 font-cursive">Cart</p>
         </button>
       </div>
@@ -80,22 +80,22 @@ const Navbar = () => {
                 <a href="/">Home</a>
               </li>
               <li className="mb-4">
-                <a
-                  href="/chilly"
+                <Link
+                  to="/chilly"
                   className="w-[75%] flex font-title font-bold p-2 text-xl"
                 >
                   <FaHotjar size={26} className="mr-2" />
                   Chilli Sauce
-                </a>
+                </Link>
               </li>
               <li className="mb-4">
-                <a
-                  href="/chilly"
+                <Link
+                  to="/chilly"
                   className="w-[75%] flex font-title font-bold p-2 text-xl"
                 >
                   <GiKiwiFruit size={26} className="mr-2" />
                   Tomato Sauce
-                </a>
+                </Link>
               </li>
               <li className="mb-4">
                 <a
@@ -107,13 +107,13 @@ const Navbar = () => {
                 </a>
               </li>
               <li className="mb-4">
-                <a
-                  href="/contact"
+                <Link
+                  to="/contact"
                   className="w-[75%] flex font-title font-bold p-2 text-xl"
                 >
                   <AiOutlineContacts size={26} className="mr-2" />
                   Contact Us
-                </a>
+                </Link>
               </li>
             </ul>
           </nav>
