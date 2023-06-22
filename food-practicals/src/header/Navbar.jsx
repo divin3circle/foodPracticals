@@ -6,6 +6,7 @@ import { Link } from "react-router-dom"
 
 const Navbar = () => {
     const [nav, setNav] = useState(false);
+  
 
   return (
     <div className="max-w-[1640px] mx-auto flex justify-between items-center p-4">
@@ -75,11 +76,14 @@ const Navbar = () => {
           </h2>
           <nav>
             <ul className="flex flex-col p-4">
-              <li className="mb-4 w-[75%] flex font-title font-bold p-2 text-xl">
+              <li
+                className="mb-4 w-[75%] flex font-title font-bold p-2 text-xl"
+                onClick={() => setNav(!nav)}
+              >
                 <AiOutlineHome size={26} className="mr-2" />
                 <a href="/">Home</a>
               </li>
-              <li className="mb-4">
+              <li className="mb-4" onClick={() => setNav(!nav)}>
                 <Link
                   to="/chilly"
                   className="w-[75%] flex font-title font-bold p-2 text-xl"
@@ -88,7 +92,7 @@ const Navbar = () => {
                   Chilli Sauce
                 </Link>
               </li>
-              <li className="mb-4">
+              <li className="mb-4" onClick={() => setNav(!nav)}>
                 <Link
                   to="/chilly"
                   className="w-[75%] flex font-title font-bold p-2 text-xl"
@@ -97,7 +101,7 @@ const Navbar = () => {
                   Tomato Sauce
                 </Link>
               </li>
-              <li className="mb-4">
+              <li className="mb-4" onClick={() => setNav(!nav)}>
                 <Link
                   to="/new"
                   className="w-[75%] flex font-title font-bold p-2 text-xl"
@@ -106,7 +110,7 @@ const Navbar = () => {
                   New Arrivals
                 </Link>
               </li>
-              <li className="mb-4">
+              <li className="mb-4" onClick={() => setNav(!nav)}>
                 <Link
                   to="/contact"
                   className="w-[75%] flex font-title font-bold p-2 text-xl"
