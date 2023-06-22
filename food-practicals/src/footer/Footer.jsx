@@ -24,7 +24,7 @@ const Footer = () => {
           </div>
           <div className="xxs:flex justify-center items-center">
             <button className="bg-rose-300 flex justify-center gap-2 rounded-lg text-black font-cursive hover:bg-tertiary hover:scale-110 duration-150 ease-in-out p-2 font-bold mt-3 md:mr-4">
-              Source Code Labs
+              <a href="">Source Code Labs</a>
               <AiOutlineGithub size={24} className="mt-2" />
             </button>
           </div>
