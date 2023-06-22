@@ -4,11 +4,11 @@ import chili25 from "../images/data-images/chili25.jpg";
 import chili4 from "../images/data-images/chili4.jpg";
 import hot4 from "../images/data-images/hot4.jpg";
 import hot7 from "../images/data-images/hot7.jpg";
-import tom2 from "../images/data-images/tom2.webp";
-import tom4 from "../images/data-images/tom4.webp";
-import tom5 from "../images/data-images/tom5.png";
-import tom7 from "../images/data-images/tom7.webp";
-import tom25 from "../images/data-images/tom25.webp";
+import tom2 from "../images/data-images/tom2.jpg";
+import tom4 from "../images/data-images/tom4.jpg";
+import tom5 from "../images/data-images/tom5.jpg";
+import tom7 from "../images/data-images/tom7.jpg";
+import tom25 from "../images/data-images/tom25.jpg";
 
 
 export const data = [
