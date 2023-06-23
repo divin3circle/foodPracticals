@@ -5,7 +5,7 @@ import Home from "./Home";
 /* import Navbar from "../header/Navbar"; */
 import Yogurt from "./Yogurt";
 import Contact from "./Contact";
-import Footer from "../footer/Footer";
+/* import Footer from "../footer/Footer"; */
 import Recipes from "./Recipes";
 
 
@@ -18,7 +18,7 @@ const MyApp = () => {
       <Recipes/>
       <Yogurt />
       <Contact />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };

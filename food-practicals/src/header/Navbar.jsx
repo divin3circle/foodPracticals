@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { AiOutlineClose, AiOutlineContacts, AiOutlineHome, AiOutlineMenu, AiOutlineSearch, AiOutlineShoppingCart } from "react-icons/ai";
-import {  FaHotjar, FaShoppingBag } from "react-icons/fa";
-import { GiKiwiFruit } from "react-icons/gi";
+import { AiOutlineBook, AiOutlineClose, AiOutlineContacts, AiOutlineHome, AiOutlineMenu, AiOutlineSearch, AiOutlineShoppingCart, AiOutlineTags } from "react-icons/ai";
+import {  FaHotjar, FaQuestion, FaShoppingBag } from "react-icons/fa";
+import { GiCook, GiKiwiFruit } from "react-icons/gi";
 import { Link } from "react-router-dom"
 
 const Navbar = () => {
@@ -33,10 +33,10 @@ const Navbar = () => {
       {/* Right Side Navbar cart */}
       <div className="cursor-pointer">
         <button className=" bg-tertiary hidden lg:flex items-center py-2 rounded-lg px-2 font-cursive font-semibold hover:bg-text border-tertiary border-2 hover:text-black hover:scale-105 ease-in duration-150">
-          <Link to="/contact">
-            <AiOutlineShoppingCart size={24} />
+          <Link to="/blogs">
+            <AiOutlineBook size={24} />
           </Link>
-          <p className="ml-2 font-cursive">Cart</p>
+          <p className="ml-2 font-cursive">Blogs</p>
         </button>
       </div>
       {/* Mobile Menu */}
@@ -103,11 +103,38 @@ const Navbar = () => {
               </li>
               <li className="mb-4" onClick={() => setNav(!nav)}>
                 <Link
+                  to="/recipe"
+                  className="w-[75%] flex font-title font-bold p-2 text-xl"
+                >
+                  <AiOutlineTags size={26} className="mr-2" />
+                  Recipes
+                </Link>
+              </li>
+              <li className="mb-4" onClick={() => setNav(!nav)}>
+                <Link
                   to="/new"
                   className="w-[75%] flex font-title font-bold p-2 text-xl"
                 >
                   <FaShoppingBag size={26} className="mr-2" />
                   New Arrivals
+                </Link>
+              </li>
+              <li className="mb-4" onClick={() => setNav(!nav)}>
+                <Link
+                  to="/blogs"
+                  className="w-[75%] flex font-title font-bold p-2 text-xl"
+                >
+                  <AiOutlineBook size={26} className="mr-2" />
+                  Blogs
+                </Link>
+              </li>
+              <li className="mb-4" onClick={() => setNav(!nav)}>
+                <Link
+                  to="/faq"
+                  className="w-[75%] flex font-title font-bold p-2 text-xl"
+                >
+                  <FaQuestion size={26} className="mr-2" />
+                  FAQs
                 </Link>
               </li>
               <li className="mb-4" onClick={() => setNav(!nav)}>

@@ -11,6 +11,11 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import Contact from "./components/Contact";
+import Basil from "./components/Basil";
+import Footer from "./footer/Footer";
+import Recipes from "./components/Recipes";
+import Blogs from "./components/Blogs";
+import Faq from "./components/Faq";
 
 function App() {
   useEffect(() => {
@@ -28,7 +33,12 @@ function App() {
         <Route path="/chilly" element={<ChilliSauce />} />
         <Route path="/new" element={<Yogurt />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/basil" element={<Basil />} />
+        <Route path="/recipe" element={<Recipes />} />
+        <Route path="/blogs" element={<Blogs />} />
+        <Route path="/faq" element={<Faq />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }
