@@ -1,48 +1,48 @@
-import maz2 from "../images/data-images/maz2.webp";
-import maz5 from "../images/data-images/maz5.webp";
-import maz25 from "../images/data-images/maz25.webp";
+import maz2 from "../images/data-images/maz2.jpg";
+import maz5 from "../images/data-images/maz5.jpg";
+import maz25 from "../images/data-images/maz25.jpg";
 import yog2 from "../images/data-images/yog2.jpg";
-import yog5 from "../images/data-images/yog5.jpeg";
-import yog5l from "../images/data-images/yog5l.webp";
+import yog5 from "../images/data-images/yog5.jpg";
+import yog5l from "../images/data-images/yog5l.jpg";
 import yog25 from "../images/data-images/yog25.jpg";
-import yog15 from "../images/data-images/you15.jpg";
+import yog15 from "../images/data-images/yog15.jpg";
 
 
 export const yogurtData = [
   {
     id: 12,
     name: "Yogurt",
-    quantity: "5 Liters",
+    quantity: "100 ml",
     image: yog5l,
   },
   {
     id: 13,
     name: "Yogurt",
-    quantity: "2 Liters",
+    quantity: "150 ml",
     image: yog2,
   },
   {
     id: 14,
     name: "Yogurt",
-    quantity: "500 grams",
+    quantity: "500 ml",
     image: yog5,
   },
   {
     id: 15,
     name: "Yogurt",
-    quantity: "250 grams",
+    quantity: "250 ml",
     image: yog25,
   },
   {
     id: 16,
     name: "Yogurt",
-    quantity: "5 Liters",
+    quantity: "100 ml",
     image: yog15,
   },
   {
     id: 17,
     name: "Maziwa Lala",
-    quantity: "5 Liters",
+    quantity: "500 ml",
     image: maz5,
   },
   {
