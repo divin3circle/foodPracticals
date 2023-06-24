@@ -6,13 +6,21 @@ import food3 from "../assets/images/food3.jpg";
 const Blogs = () => {
   return (
     <div id="blogs" className="my-0 mx-auto">
-      <h1 className="font-bold text-3xl text-center font-title mt-16">
+      <h1
+        className="font-bold text-3xl text-center font-title mt-16"
+        data-aos="zoom-in"
+        data-aos-duration="1500"
+      >
         Our Top Blogs
       </h1>
       {/**Blogs container */}
       <div className="flex justify-center gap-6 xxs:flex-col md:flex-row p-6">
         {/**Blog 1 */}
-        <div className="mx-auto relative hover:scale-95 ease-in duration-150 cursor-pointer">
+        <div
+          className="mx-auto relative hover:scale-95 ease-in duration-150 cursor-pointer"
+          data-aos="fade-right"
+          data-aos-duration="1500"
+        >
           <div className="">
             <figure>
               <img
@@ -34,7 +42,11 @@ const Blogs = () => {
         {/**Blog 1 end */}
 
         {/**Blog 2 */}
-        <div className="mx-auto relative hover:scale-95 ease-in duration-150 cursor-pointer">
+        <div
+          className="mx-auto relative hover:scale-95 ease-in duration-150 cursor-pointer"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+        >
           <div className="">
             <figure>
               <img
@@ -56,7 +68,11 @@ const Blogs = () => {
         {/**Blog 2 end */}
 
         {/**Blog 3 */}
-        <div className="mx-auto relative hover:scale-95 ease-in duration-150 cursor-pointer">
+        <div
+          className="mx-auto relative hover:scale-95 ease-in duration-150 cursor-pointer"
+          data-aos="fade-left"
+          data-aos-duration="1500"
+        >
           <div className="">
             <figure>
               <img
@@ -68,7 +84,7 @@ const Blogs = () => {
           </div>
           <div className="absolute top-0 p-2 flex gap-16">
             <h1 className="font-bold text-white text-[1rem] flex justify-center font-title">
-             A Creamy Delight
+              A Creamy Delight
             </h1>
             <button className="text-text font-cursive font-bold text-[1rem] border-2 rounded-lg p-1">
               <Link to="/blog3">Read more</Link>

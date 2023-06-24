@@ -28,7 +28,7 @@ const Headline = () => {
             <div className="mt-16 flex lg:justify-between xxs:justify-between md:justify-start items-baseline">
               <p className=" p-2 mt-14 font-body text-sm  ">Garlic inspired</p>
               <button className="p-2 text-sm border-2 border-text rounded-xl mr-2 md:ml-4 hover:bg-rose-300 hover:text-black hover:border-none hover:scale-75 ease-in duration-150 hover:font-bold">
-                <Link to="/contact">More</Link>
+                <Link to="/chilly">More</Link>
               </button>
             </div>
           </div>
@@ -46,12 +46,12 @@ const Headline = () => {
           {/*overlay*/}
           <div className="absolute w-80 md:max-w-[100%] h-full bg-black/50 rounded-xl text-text">
             <p className="font-title font-bold text-2xl p-2">
-              Today's Chilli Pick
+              Today's Recipe Picks
             </p>
             <div className=" mt-16 flex lg:justify-between xxs:justify-between md:justify-start items-baseline">
               <p className="p-2 mt-14 font-body text-sm  ">Fiery Sauce</p>
               <button className="p-2 text-sm border-2 border-text rounded-xl mr-2 md:ml-4 hover:bg-rose-300 hover:text-black hover:border-none hover:scale-75 ease-in duration-150 hover:font-bold">
-                <Link to="/contact">More</Link>
+                <Link to="/recipe">More</Link>
               </button>
             </div>
           </div>

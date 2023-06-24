@@ -1,7 +1,9 @@
 
 const BlogThree = () => {
   return (
-    <div id='blog3'>BlogThree</div>
+    <div id='blog3'>
+        
+    </div>
   )
 }
 

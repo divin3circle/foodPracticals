@@ -21,6 +21,7 @@ import Shrimp from "./components/Shrimp";
 import BlogOne from "./components/BlogOne";
 import BlogTwo from "./components/BlogTwo";
 import BlogThree from "./components/BlogThree";
+import Nopage from "./components/Nopage";
 
 function App() {
   useEffect(() => {
@@ -47,6 +48,7 @@ function App() {
         <Route path="/blog1" element={<BlogOne />} />
         <Route path="/blog2" element={<BlogTwo />} />
         <Route path="/blog3" element={<BlogThree />} />
+        <Route path="*" element={<Nopage />} />
       </Routes>
       <Footer />
     </BrowserRouter>
