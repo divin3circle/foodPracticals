@@ -1,11 +1,17 @@
-import { useState } from "react";
-import { AiOutlineBook, AiOutlineClose, AiOutlineContacts, AiOutlineHome, AiOutlineMenu, AiOutlineSearch, AiOutlineShoppingCart, AiOutlineTags } from "react-icons/ai";
+import { useRef, useState } from "react";
+import { AiOutlineBook, AiOutlineClose, AiOutlineContacts, AiOutlineHome, AiOutlineMenu, AiOutlineSearch, AiOutlineTags } from "react-icons/ai";
 import {  FaHotjar, FaQuestion, FaShoppingBag } from "react-icons/fa";
-import { GiCook, GiKiwiFruit } from "react-icons/gi";
+import { GiKiwiFruit } from "react-icons/gi";
 import { Link } from "react-router-dom"
 
 const Navbar = () => {
     const [nav, setNav] = useState(false);
+    const formRef = useRef("");
+
+    const onSubmit = (e) => {
+      e.preventDefault();
+      formRef.current.reset();
+    }
   
 
   return (
@@ -24,11 +30,25 @@ const Navbar = () => {
       {/* Right Side Navbar Search Input */}
       <div className="bg-tertiary rounded-xl flex items-center p-1 w-[200px] xs:w-[400px] md:w-[500px]">
         <AiOutlineSearch size={20} />
-        <input
-          type="text"
-          placeholder="Search"
-          className="bg-transparent border-none outline-none md:py-2 py-1 p-2 focus:outline-none w-full font-cursive"
-        />
+        <form
+          ref={formRef}
+          className="flex items-center justify-between w-full px-2"
+          onSubmit={onSubmit}
+        >
+          <input
+            type="text"
+            placeholder="Search Recipes"
+            className="bg-transparent border-none outline-none md:py-2 py-1 p-2 focus:outline-none w-full font-cursive"
+          />
+          <Link to="/recipe">
+            <button
+              type="submit"
+              className="hover:scale-105 ease-in duration-150  border rounded-lg p-1 bg-white font-semibold font-cursive"
+            >
+              Search
+            </button>
+          </Link>
+        </form>
       </div>
       {/* Right Side Navbar cart */}
       <div className="cursor-pointer">
