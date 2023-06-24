@@ -131,7 +131,6 @@ const BlogOne = () => {
           celebration of food and life.
         </p>
       </div>
-      Food Practicals Limited🧪
       <p className="text-center font-bold font-cursive text-gray-400">
         Food Practicals Limited🧪
       </p>

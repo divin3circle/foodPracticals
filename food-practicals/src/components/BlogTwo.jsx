@@ -65,7 +65,7 @@ const BlogTwo = () => {
             </Link>
           </div>
         </div>
-        <div className="font-body meading-7 p-2 md:text-lg xxs:text-[1rem]">
+        <div className="font-body leading-7 p-2 md:text-lg xxs:text-[1rem]">
           <h1 className="font-bold md:text-3xl xxs:text-xl text-center mb-6">
             Heat Up Your Tastebuds: The Fiery World of Chili Sauce and its
             Culinary Applications
