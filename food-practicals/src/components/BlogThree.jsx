@@ -154,7 +154,7 @@ const BlogThree = () => {
               <span className="font-bold">Yogurt and Maziwa Lala</span>{" "}
               products, at{" "}
               <span className="font-bold text-rose-500 font-cursive">
-                <Link to="/">FoodPracticals Limited</Link>.
+                <Link to="/new">FoodPracticals Limited</Link>.
               </span>
             </p>
           </div>
@@ -212,7 +212,7 @@ const BlogThree = () => {
               delight and discover the endless culinary adventures that yogurt
               has to offer at{" "}
               <span className="font-bold text-rose-500 font-cursive">
-                FoodPracticals Limited
+                <Link to="/">FoodPracticals Limited</Link>
               </span>
               .
             </p>
