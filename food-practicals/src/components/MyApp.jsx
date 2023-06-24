@@ -7,6 +7,7 @@ import Yogurt from "./Yogurt";
 import Contact from "./Contact";
 /* import Footer from "../footer/Footer"; */
 import Recipes from "./Recipes";
+import Blogs from "./Blogs";
 
 
 const MyApp = () => {
@@ -17,6 +18,7 @@ const MyApp = () => {
       <ChilliSauce />
       <Recipes/>
       <Yogurt />
+      <Blogs />
       <Contact />
       {/* <Footer /> */}
     </>

@@ -32,12 +32,12 @@ const Navbar = () => {
       </div>
       {/* Right Side Navbar cart */}
       <div className="cursor-pointer">
-        <button className=" bg-tertiary hidden lg:flex items-center py-2 rounded-lg px-2 font-cursive font-semibold hover:bg-text border-tertiary border-2 hover:text-black hover:scale-105 ease-in duration-150">
-          <Link to="/blogs">
+        <Link to="/blogs">
+          <button className=" bg-tertiary hidden lg:flex items-center py-2 rounded-lg px-2 font-cursive font-semibold hover:bg-text border-tertiary border-2 hover:text-black hover:scale-105 ease-in duration-150">
             <AiOutlineBook size={24} />
-          </Link>
-          <p className="ml-2 font-cursive">Blogs</p>
-        </button>
+            <p className="ml-2 font-cursive">Blogs</p>
+          </button>
+        </Link>
       </div>
       {/* Mobile Menu */}
       <div>

@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import basil from "../assets/images/basil.jpg"
 import recipe1 from "../assets/images/recipe1.jpg";
+import { AiFillFacebook, AiFillLinkedin, AiFillMail, AiFillPhone } from "react-icons/ai";
 
 const Basil = () => {
   return (
@@ -109,8 +110,55 @@ const Basil = () => {
         </ol>
       </div>
       <div className="flex justify-center">
-        <img src={recipe1} alt="recipe" className="md:w-[30%] xxs:w-full rounded-lg" />
+        <img
+          src={recipe1}
+          alt="recipe"
+          className="md:w-[30%] xxs:w-full rounded-lg"
+        />
       </div>
+      {/**socials */}
+      <div className="flex justify-center items-center">
+        <div className="flex gap-2 mt-8">
+          <div className="cursor-pointer">
+            <Link to="https://www.facebook.com/profile.php?id=100062944525692&refid=52&paipv=0&eav=AfYCxmA5AWrHrVkAzMZPm3qU-ySaBz9ItnpeUQNZj66M3kbDrgRwpX8FQdDlyIJcbo0">
+              <AiFillFacebook
+                size={30}
+                className="hover:scale-110 ease-in duration-150"
+              />
+            </Link>
+          </div>
+          <div className="cursor-pointer">
+            <Link to="https://www.linkedin.com/in/philip-soita-8864bb11a/">
+              <AiFillLinkedin
+                size={30}
+                className="hover:scale-110 ease-in duration-150"
+              />
+            </Link>
+          </div>
+          <div className="cursor-pointer">
+            <Link to="/contact">
+              <AiFillMail
+                size={30}
+                className="hover:scale-110 ease-in duration-150"
+              />
+            </Link>
+          </div>
+          <div className="cursor-pointer">
+            <Link to="/contact">
+              <AiFillPhone
+                size={30}
+                className="hover:scale-110 ease-in duration-150"
+              />
+            </Link>
+          </div>
+        </div>
+      </div>
+      <p className="font-semibold text-2xl font-cursive text-center mt-4">
+        Powered by{" "}
+        <span className="text-rose-500 text-lg font-cursive">
+          <Link to="/">Fingerlick Sauce</Link>
+        </span>
+      </p>
     </div>
   );
 }

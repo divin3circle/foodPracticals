@@ -16,6 +16,11 @@ import Footer from "./footer/Footer";
 import Recipes from "./components/Recipes";
 import Blogs from "./components/Blogs";
 import Faq from "./components/Faq";
+import Sweet from "./components/Sweet";
+import Shrimp from "./components/Shrimp";
+import BlogOne from "./components/BlogOne";
+import BlogTwo from "./components/BlogTwo";
+import BlogThree from "./components/BlogThree";
 
 function App() {
   useEffect(() => {
@@ -37,6 +42,11 @@ function App() {
         <Route path="/recipe" element={<Recipes />} />
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/faq" element={<Faq />} />
+        <Route path="/sweet" element={<Sweet />} />
+        <Route path="/shrimp" element={<Shrimp />} />
+        <Route path="/blog1" element={<BlogOne />} />
+        <Route path="/blog2" element={<BlogTwo />} />
+        <Route path="/blog3" element={<BlogThree />} />
       </Routes>
       <Footer />
     </BrowserRouter>

@@ -26,7 +26,7 @@ const Recipes = () => {
             <img src={recipe1} alt="Recipe 1" className="rounded-xl" />
           </div>
           <div className="mt-1 my-0 mx-auto p-4">
-            <h1 className="text-rose-500 font-cursive font-bold text-2xl text-center md:text-xl">
+            <h1 className=" font-cursive font-bold text-2xl text-center md:text-xl">
               Spicy Tomato and Basil Pasta
             </h1>
             <div className="flex justify-center items-center">
@@ -48,7 +48,7 @@ const Recipes = () => {
             <img src={recipe2} alt="Recipe 2" className="rounded-xl" />
           </div>
           <div className="mt-1 my-0 mx-auto p-4">
-            <h1 className="text-rose-500 font-cursive font-bold text-2xl md:text-xl text-center">
+            <h1 className="font-cursive font-bold text-2xl md:text-xl text-center">
               Sweet and Spicy Mango Glaze Salsa
             </h1>
             <div className="flex justify-center items-center">
@@ -70,7 +70,7 @@ const Recipes = () => {
             <img src={recipe3} alt="Recipe 3" className="rounded-xl" />
           </div>
           <div className="mt-1 my-0 mx-auto p-4">
-            <h1 className="text-rose-500 font-cursive font-bold text-2xl text-center md:text-xl">
+            <h1 className=" font-cursive font-bold text-2xl text-center md:text-xl">
               Grilled Shrimp with Spicy Glaze
             </h1>
             <div className="flex justify-center items-center">
